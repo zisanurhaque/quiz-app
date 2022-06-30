@@ -668,6 +668,7 @@ h6 {
     font-size: 16px;
     border-radius: 50px;
     bottom: 50px;
+    z-index: 999;
   }
   .quiz .carousel-status {
     font-size: 14px !important;
@@ -985,16 +986,26 @@ h6 {
     font-size: 12px;
     text-align: center;
   }
+  .home {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 80px 20px;
+    margin: 0px;
+    display: block;
+  }
   .home .next {
     right: 20px;
     top: 20px;
     font-size: 14px;
   }
   .home .intro {
-    margin-top: 20px;
+    margin: 0px;
   }
   .home .intro h1 {
     font-size: 26px;
+    text-align: center;
+    width: 100%;
   }
   .home .select {
     display: -webkit-box;
@@ -1002,7 +1013,7 @@ h6 {
     display: flex;
     margin: 0px;
     width: 100%;
-    padding: 30px 20px;
+    padding: 30px 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1027,6 +1038,7 @@ h6 {
     border-radius: 2px;
     margin-right: 5px;
     margin-bottom: 5px;
+    width: 100%;
   }
   .home .select input {
     padding: 10px 15px;
@@ -1035,6 +1047,7 @@ h6 {
   }
   .home .endContainer {
     margin: 0px;
+    text-align: center;
   }
   .home .endContainer .end {
     font-size: 18px;
@@ -1072,7 +1085,8 @@ h6 {
   =================================
   */
   .quiz {
-    padding: 50px 0px;
+    padding: 20px 0px;
+    margin: 0px;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -1092,7 +1106,12 @@ h6 {
     padding: 10px 30px;
     font-size: 16px;
     border-radius: 50px;
-    bottom: 20px;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0px;
+    float: left;
   }
   .quiz .carousel-status {
     font-size: 14px !important;
@@ -1104,6 +1123,7 @@ h6 {
     width: 100%;
     float: left;
     padding: 20px;
+    margin: 50px 0px;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -605,6 +605,7 @@ h6{
       font-size: 16px;
       border-radius: 50px;
       bottom: 50px;
+      z-index: 999;
     }
 
     .carousel-status{
@@ -971,6 +972,11 @@ h6{
 
   .home{
 
+    height: max-content;
+    padding: 80px 20px;
+    margin: 0px;
+    display: block;
+
     .next{
       right: 20px;
       top: 20px;
@@ -978,9 +984,11 @@ h6{
     }
 
     .intro{
-      margin-top: 20px;
+      margin: 0px;
       h1{
         font-size: 26px;
+        text-align: center;
+        width: 100%;
       }
     }
 
@@ -988,7 +996,7 @@ h6{
       display: flex;
       margin: 0px;
       width: 100%;
-      padding: 30px 20px;
+      padding: 30px 0px;
       justify-content: center;
       align-items: center;
 
@@ -1007,6 +1015,7 @@ h6{
           border-radius: 2px;
           margin-right: 5px;
           margin-bottom: 5px;
+          width: 100%;
         }
       }
 
@@ -1020,6 +1029,7 @@ h6{
 
     .endContainer{
       margin: 0px;
+      text-align: center;
       .end{
         font-size: 18px;
         margin: 0px;
@@ -1067,7 +1077,8 @@ h6{
   */
 
   .quiz{
-    padding: 50px 0px;
+    padding: 20px 0px;
+    margin: 0px;
     height: max-content;
 
     .timer{
@@ -1085,7 +1096,10 @@ h6{
       padding: 10px 30px;
       font-size: 16px;
       border-radius: 50px;
-      bottom: 20px;
+      position: relative;
+      width: max-content;
+      margin: 0px;
+      float: left;
     }
 
     .carousel-status{
@@ -1100,6 +1114,7 @@ h6{
       width: 100%;
       float: left;
       padding: 20px;
+      margin: 50px 0px;
       height: 100vh;
       display: flex;
       align-items: center;
