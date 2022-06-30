@@ -1,0 +1,1188 @@
+/*
+=================================
+=========Global Styles===========
+=================================
+*/
+
+$primaryColor: rgb(61, 63, 78);
+$secondaryColor: rgb(43, 201, 140);
+$font: 'Jost', sans-serif;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  color: $primaryColor;
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0px;
+  margin: 0px;
+}
+
+h1{
+  font-size: 46px;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 30px;
+}
+h5{
+  font-size: 24px;
+}
+h6{
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  transition: .3s;
+}
+
+
+/*
+=================================
+=========Homepage Styles=========
+=================================
+*/
+
+.alert{
+  float: left;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primaryColor;
+  font-size: 16px;
+  color: $secondaryColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.home{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .next{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-size: 18px;
+    font-family: $font;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: $primaryColor;
+    border-radius: 3px;
+    float: left;
+  }
+
+  .next:hover{
+    color: $secondaryColor;
+  }
+
+  .intro{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      span{
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  .select{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    width: 40%;
+
+    .label{
+      float: left;
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: grey;
+    }
+
+    .categories{
+
+      display: flex;
+      justify-content: space-between;
+
+      button{
+        padding: 8px 20px;
+        font-size: 18px;
+        font-family: $font;
+        background: $primaryColor;
+        cursor: pointer;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        float: left;
+      }
+      button:hover{
+        background: $secondaryColor;
+        color: $primaryColor;
+      }
+      button.active{
+        background: $secondaryColor;
+        color: $primaryColor;
+      }
+    }
+
+    input{
+      float: left;
+      padding: 10px 20px;
+      min-width: 300px;
+      border-radius: 3px;
+      border: 1px solid $primaryColor;
+      outline: none;
+      font-size: 18px;
+      font-family: $font;
+      color: $primaryColor;
+      margin-bottom: 25px;
+    }
+
+  }
+
+  .endContainer{
+    .end{
+      color: $primaryColor;
+      font-size: 28px;
+      margin-top: 20px;
+
+      span{
+        color: $secondaryColor;
+      }
+
+    }
+  }
+
+}
+
+
+/*
+=================================
+=========Reminder Page Styles=========
+=================================
+*/
+
+.reminder{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  text-align: center;
+
+  h1{
+    padding: 0px;
+    margin: 0px;
+
+    span{
+      color: $secondaryColor;
+    }
+
+  }
+
+  p{
+    padding: 20px;
+    float: left;
+  }
+
+  button{
+    padding: 8px 30px;
+    font-size: 18px;
+    font-family: $font;
+    background: $secondaryColor;
+    cursor: pointer;
+    border: none;
+    color: $primaryColor;
+    border-radius: 3px;
+    float: left;
+    margin-top: 15px;
+  }
+
+}
+
+/*
+=================================
+=========Quiz Page Styles=========
+=================================
+*/
+
+.quiz{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 100px;
+  position: relative;
+  padding-top: 20px;
+
+  .timer{
+    background: $primaryColor;
+    color: white;
+    padding: 8px 30px;
+    float: left;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
+
+  .finish{
+    padding: 8px 30px;
+    font-size: 18px;
+    font-family: $font;
+    background: $secondaryColor;
+    cursor: pointer;
+    border: none;
+    color: $primaryColor;
+    border-radius: 3px;
+    float: left;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carousel-status{
+    font-size: 18px !important;
+    color: $primaryColor !important;
+    text-shadow: none !important;
+  }
+
+  .control-arrow{
+    background: rgb(199, 199, 199) !important;
+    height: max-content !important;
+    top: 50% !important;
+    border-radius: 50px !important;
+    height: 40px !important;
+    width: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+
+    width: 100%;
+    float: left;
+    padding: 80px 100px;
+
+    .question{
+
+      float: left;
+      width: 100%;
+      
+      h5{
+        float: left;
+        width: 100%;
+        text-align: left;
+      }
+  
+      .options{
+        float: left;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    
+        .list{
+          width: 49%;
+          height: max-content;
+          list-style-type: none;
+          float: left;
+          display: flex;
+          align-items: center;
+          margin: 10px 0px;
+          padding: 10px 25px;
+          font-size: 18px;
+          box-shadow: 0px 0px 4px 0px rgb(201, 201, 201);
+          border: 1px solid white;
+          border-radius: 5px;
+          overflow: hidden;
+          cursor: pointer;
+    
+          span{
+            float: left;
+            margin-right: 20px;
+          }
+    
+          p{
+            float: left;
+            text-align: left;
+          }
+    
+        }
+        .list:hover{
+          border: 1px solid $primaryColor;
+        }
+        .checked{
+          border: 1px solid $primaryColor;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*
+=================================
+=========Result Page Styles=========
+=================================
+*/
+
+.result{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primaryColor;
+
+    .contents{
+      z-index: 1;
+      color: rgb(241, 183, 75);
+      margin-top: 5px;
+      text-align: center;
+      font-family: 'Beau Rivage', cursive;
+      background: $primaryColor;
+      padding: 50px 100px;
+      border-radius: 20px;
+      border: 5px solid rgb(241, 183, 75);
+      width: 50vw;
+
+      h3{
+        font-size: 38px;
+        font-family: none;
+        float: left;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        color: rgb(206, 206, 206);
+      }
+
+      h1{
+        font-size: 80px;
+        float: left;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        li{
+          font-size: 30px;
+          list-style-type: none;
+        }
+      }
+
+      .bottom{
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .signature{
+          float: left;
+          width: max-content;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+  
+          p{
+            float: left;
+            width: 100%;
+            color: rgb(206, 206, 206);
+            font-family: none;
+            position: relative;
+            padding: 5px;
+            font-size: 16px;
+          }
+          p::after{
+            position: absolute;
+            content: "";
+            height: 1px;
+            background: rgb(206, 206, 206);
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+          }
+          span{
+            float: left;
+            width: 100%;
+            font-size: 14px;
+            padding: 5px;
+          }
+          .sig{
+            font-size: 22px;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+      }
+
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: "1330px"){
+
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+
+  .alert{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home{
+
+    padding: 0px 50px;
+
+    .next{
+      right: 20px;
+      top: 20px;
+      font-size: 16px;
+    }
+
+    .intro{
+      margin-top: 0px;
+      h1{
+        font-size: 32px;
+      }
+    }
+
+    .select{
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      padding: 50px 30px;
+      justify-content: center;
+      align-items: center;
+
+      .label{
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: grey;
+      }
+
+      .categories{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 2px;
+          margin-right: 10px;
+          margin-bottom: 0px;
+        }
+      }
+
+      input{
+        padding: 10px 15px;
+        min-width: 50%;
+        font-size: 16px;
+      }
+
+    }
+
+    .endContainer{
+      margin: 0px;
+      .end{
+        font-size: 28px;
+        margin: 0px;
+
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+
+  .reminder{
+    height: 100vh;
+    padding: 50px 100px;
+    align-items: start;
+
+    h1{
+      font-size: 32px;
+      padding: 0px;
+      text-align: left;
+    }
+
+    p{
+      font-size: 20px;
+      padding: 0px;
+      margin: 20px 0px;
+      text-align: left;
+    }
+
+    button{
+      margin-top: 5px;
+    }
+
+  }
+
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+
+  .quiz{
+    padding: 20px;
+    height: max-content;
+
+    .timer{
+      background: $primaryColor;
+      color: $secondaryColor;
+      padding: 10px 25px;
+      left: 65px;
+      transform: none;
+      top: 30px;
+      font-size: 16px;
+      border-radius: 50px;
+    }
+
+    .finish{
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      bottom: 50px;
+    }
+
+    .carousel-status{
+      font-size: 14px !important;
+      top: 0;
+      margin-right: 40px;
+      position: absolute;
+    }
+
+    .container{
+
+      width: 100%;
+      float: left;
+      padding: 20px 50px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+
+      .question{
+        
+        h5{
+          font-size: 22px;
+        }
+    
+        .options{
+          width: 100%;
+      
+          .list{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+      
+            span{
+              float: left;
+              margin-right: 10px;
+            }
+      
+            p{
+              float: left;
+              text-align: left;
+            }
+      
+          }
+        }
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+
+  .result{
+    height: 100vh;
+
+      .contents{
+        height: 100vh;
+        margin-top: 0px;
+        border-radius: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 180px;
+
+        h3{
+          font-size: 20px;
+          padding: 0px;
+          margin: 0px;
+        }
+
+        h1{
+          font-size: 50px;
+          width: 100%;
+          padding: 50px 0px;
+
+          li{
+            font-size: 25px;
+          }
+        }
+
+        .bottom{
+          float: left;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0px;
+          margin: 0px;
+        }
+
+      }
+
+
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: "800px"){
+
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+
+  .alert{
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .home{
+
+    padding: 0px 30px;
+
+    .next{
+      right: 20px;
+      top: 20px;
+      font-size: 14px;
+    }
+
+    .intro{
+      margin-top: 20px;
+      h1{
+        font-size: 26px;
+      }
+    }
+
+    .select{
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      padding: 30px 20px;
+      justify-content: center;
+      align-items: center;
+
+      .label{
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .categories{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+          padding: 8px 15px;
+          font-size: 14px;
+          border-radius: 2px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      input{
+        padding: 10px 15px;
+        min-width: 70%;
+        font-size: 16px;
+      }
+
+    }
+
+    .endContainer{
+      margin: 0px;
+      .end{
+        font-size: 18px;
+        margin: 0px;
+
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+
+  .reminder{
+    height: 100vh;
+    padding: 20px;
+    align-items: start;
+
+    h1{
+      font-size: 20px;
+      padding: 0px;
+      text-align: left;
+    }
+
+    p{
+      font-size: 16px;
+      padding: 0px;
+      margin: 20px 0px;
+      text-align: left;
+    }
+
+    button{
+      margin-top: 0px;
+    }
+
+  }
+
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+
+  .quiz{
+    padding: 50px 0px;
+    height: max-content;
+
+    .timer{
+      background: $primaryColor;
+      color: $secondaryColor;
+      padding: 8px 20px;
+      left: 20px;
+      transform: none;
+      top: 20px;
+      font-size: 14px;
+      border-radius: 50px;
+    }
+
+    .finish{
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      bottom: 50px;
+    }
+
+    .carousel-status{
+      font-size: 14px !important;
+      top: 0;
+      margin-right: 20px;
+      position: absolute;
+    }
+
+    .container{
+
+      width: 100%;
+      float: left;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+
+      .question{
+        
+        h5{
+          font-size: 18px;
+        }
+    
+        .options{
+          width: 100%;
+      
+          .list{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 8px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+      
+            span{
+              float: left;
+              margin-right: 10px;
+            }
+      
+            p{
+              float: left;
+              text-align: left;
+            }
+      
+          }
+        }
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+
+  .result{
+    height: 100vh;
+
+      .contents{
+        height: 100vh;
+        margin-top: 0px;
+        border-radius: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 100px;
+
+        h3{
+          font-size: 20px;
+          padding: 0px;
+          margin: 0px;
+        }
+
+        h1{
+          font-size: 50px;
+          width: 100%;
+          padding: 50px 0px;
+
+          li{
+            font-size: 25px;
+          }
+        }
+
+        .bottom{
+          float: left;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0px;
+          margin: 0px;
+        }
+
+      }
+
+
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: "480px"){
+
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+
+  .alert{
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .home{
+
+    .next{
+      right: 20px;
+      top: 20px;
+      font-size: 14px;
+    }
+
+    .intro{
+      margin-top: 20px;
+      h1{
+        font-size: 26px;
+      }
+    }
+
+    .select{
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      padding: 30px 20px;
+      justify-content: center;
+      align-items: center;
+
+      .label{
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .categories{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+          padding: 8px 15px;
+          font-size: 14px;
+          border-radius: 2px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      input{
+        padding: 10px 15px;
+        min-width: 100%;
+        font-size: 16px;
+      }
+
+    }
+
+    .endContainer{
+      margin: 0px;
+      .end{
+        font-size: 18px;
+        margin: 0px;
+
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+
+  .reminder{
+    height: 100vh;
+    padding: 20px;
+    align-items: start;
+
+    h1{
+      font-size: 20px;
+      padding: 0px;
+      text-align: left;
+    }
+
+    p{
+      font-size: 16px;
+      padding: 0px;
+      margin: 20px 0px;
+      text-align: left;
+    }
+
+    button{
+      margin-top: 0px;
+    }
+
+  }
+
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+
+  .quiz{
+    padding: 50px 0px;
+    height: max-content;
+
+    .timer{
+      background: $primaryColor;
+      color: $secondaryColor;
+      padding: 8px 20px;
+      left: 20px;
+      transform: none;
+      top: 20px;
+      font-size: 14px;
+      border-radius: 50px;
+    }
+
+    .finish{
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      bottom: 20px;
+    }
+
+    .carousel-status{
+      font-size: 14px !important;
+      top: 0;
+      margin-right: 20px;
+      position: absolute;
+    }
+
+    .container{
+
+      width: 100%;
+      float: left;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+
+      .question{
+        
+        h5{
+          font-size: 18px;
+        }
+    
+        .options{
+          width: 100%;
+      
+          .list{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 8px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+      
+            span{
+              float: left;
+              margin-right: 10px;
+            }
+      
+            p{
+              float: left;
+              text-align: left;
+            }
+      
+          }
+        }
+      }
+    }
+
+  }
+
+
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+
+  .result{
+    height: 100vh;
+
+      .contents{
+        height: 100vh;
+        margin-top: 0px;
+        padding: 20px;
+        border-radius: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          font-size: 20px;
+          padding: 0px;
+          margin: 0px;
+        }
+
+        h1{
+          font-size: 50px;
+          width: 100%;
+          padding: 50px 0px;
+
+          li{
+            font-size: 25px;
+          }
+        }
+
+        .bottom{
+          float: left;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+      }
+
+
+  }
+
+}

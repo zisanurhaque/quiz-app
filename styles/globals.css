@@ -1,0 +1,1185 @@
+/*
+=================================
+=========Global Styles===========
+=================================
+*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  color: #3d3f4e;
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*
+=================================
+=========Homepage Styles=========
+=================================
+*/
+.alert {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3d3f4e;
+  font-size: 16px;
+  color: #2bc98c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.home {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.home .next {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: #3d3f4e;
+  border-radius: 3px;
+  float: left;
+}
+
+.home .next:hover {
+  color: #2bc98c;
+}
+
+.home .intro {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .intro h1 span {
+  color: #2bc98c;
+}
+
+.home .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0px;
+  width: 40%;
+}
+
+.home .select .label {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.home .select .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .select .categories button {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  background: #3d3f4e;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  float: left;
+}
+
+.home .select .categories button:hover {
+  background: #2bc98c;
+  color: #3d3f4e;
+}
+
+.home .select .categories button.active {
+  background: #2bc98c;
+  color: #3d3f4e;
+}
+
+.home .select input {
+  float: left;
+  padding: 10px 20px;
+  min-width: 300px;
+  border-radius: 3px;
+  border: 1px solid #3d3f4e;
+  outline: none;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  color: #3d3f4e;
+  margin-bottom: 25px;
+}
+
+.home .endContainer .end {
+  color: #3d3f4e;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.home .endContainer .end span {
+  color: #2bc98c;
+}
+
+/*
+=================================
+=========Reminder Page Styles=========
+=================================
+*/
+.reminder {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+  text-align: center;
+}
+
+.reminder h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.reminder h1 span {
+  color: #2bc98c;
+}
+
+.reminder p {
+  padding: 20px;
+  float: left;
+}
+
+.reminder button {
+  padding: 8px 30px;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  background: #2bc98c;
+  cursor: pointer;
+  border: none;
+  color: #3d3f4e;
+  border-radius: 3px;
+  float: left;
+  margin-top: 15px;
+}
+
+/*
+=================================
+=========Quiz Page Styles=========
+=================================
+*/
+.quiz {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 100px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.quiz .timer {
+  background: #3d3f4e;
+  color: white;
+  padding: 8px 30px;
+  float: left;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 40px;
+}
+
+.quiz .finish {
+  padding: 8px 30px;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  background: #2bc98c;
+  cursor: pointer;
+  border: none;
+  color: #3d3f4e;
+  border-radius: 3px;
+  float: left;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.quiz .carousel-status {
+  font-size: 18px !important;
+  color: #3d3f4e !important;
+  text-shadow: none !important;
+}
+
+.quiz .control-arrow {
+  background: #c7c7c7 !important;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  top: 50% !important;
+  border-radius: 50px !important;
+  height: 40px !important;
+  width: 40px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz .container {
+  width: 100%;
+  float: left;
+  padding: 80px 100px;
+}
+
+.quiz .container .question {
+  float: left;
+  width: 100%;
+}
+
+.quiz .container .question h5 {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.quiz .container .question .options {
+  float: left;
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.quiz .container .question .options .list {
+  width: 49%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  list-style-type: none;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+  padding: 10px 25px;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 0px 4px 0px #c9c9c9;
+          box-shadow: 0px 0px 4px 0px #c9c9c9;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.quiz .container .question .options .list span {
+  float: left;
+  margin-right: 20px;
+}
+
+.quiz .container .question .options .list p {
+  float: left;
+  text-align: left;
+}
+
+.quiz .container .question .options .list:hover {
+  border: 1px solid #3d3f4e;
+}
+
+.quiz .container .question .options .checked {
+  border: 1px solid #3d3f4e;
+}
+
+/*
+=================================
+=========Result Page Styles=========
+=================================
+*/
+.result {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3d3f4e;
+}
+
+.result .contents {
+  z-index: 1;
+  color: #f1b74b;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Beau Rivage', cursive;
+  background: #3d3f4e;
+  padding: 50px 100px;
+  border-radius: 20px;
+  border: 5px solid #f1b74b;
+  width: 50vw;
+}
+
+.result .contents h3 {
+  font-size: 38px;
+  font-family: none;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  color: #cecece;
+}
+
+.result .contents h1 {
+  font-size: 80px;
+  float: left;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.result .contents h1 li {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.result .contents .bottom {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.result .contents .bottom .signature {
+  float: left;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.result .contents .bottom .signature p {
+  float: left;
+  width: 100%;
+  color: #cecece;
+  font-family: none;
+  position: relative;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.result .contents .bottom .signature p::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: #cecece;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+}
+
+.result .contents .bottom .signature span {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.result .contents .bottom .signature .sig {
+  font-size: 22px;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1330px) {
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+  .alert {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .home {
+    padding: 0px 50px;
+  }
+  .home .next {
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+  }
+  .home .intro {
+    margin-top: 0px;
+  }
+  .home .intro h1 {
+    font-size: 32px;
+  }
+  .home .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    padding: 50px 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .select .label {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: grey;
+  }
+  .home .select .categories {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home .select .categories button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .home .select input {
+    padding: 10px 15px;
+    min-width: 50%;
+    font-size: 16px;
+  }
+  .home .endContainer {
+    margin: 0px;
+  }
+  .home .endContainer .end {
+    font-size: 28px;
+    margin: 0px;
+  }
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+  .reminder {
+    height: 100vh;
+    padding: 50px 100px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .reminder h1 {
+    font-size: 32px;
+    padding: 0px;
+    text-align: left;
+  }
+  .reminder p {
+    font-size: 20px;
+    padding: 0px;
+    margin: 20px 0px;
+    text-align: left;
+  }
+  .reminder button {
+    margin-top: 5px;
+  }
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+  .quiz {
+    padding: 20px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .quiz .timer {
+    background: #3d3f4e;
+    color: #2bc98c;
+    padding: 10px 25px;
+    left: 65px;
+    -webkit-transform: none;
+            transform: none;
+    top: 30px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+  .quiz .finish {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    bottom: 50px;
+  }
+  .quiz .carousel-status {
+    font-size: 14px !important;
+    top: 0;
+    margin-right: 40px;
+    position: absolute;
+  }
+  .quiz .container {
+    width: 100%;
+    float: left;
+    padding: 20px 50px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quiz .container .question h5 {
+    font-size: 22px;
+  }
+  .quiz .container .question .options {
+    width: 100%;
+  }
+  .quiz .container .question .options .list {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .quiz .container .question .options .list span {
+    float: left;
+    margin-right: 10px;
+  }
+  .quiz .container .question .options .list p {
+    float: left;
+    text-align: left;
+  }
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+  .result {
+    height: 100vh;
+  }
+  .result .contents {
+    height: 100vh;
+    margin-top: 0px;
+    border-radius: 0px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 180px;
+  }
+  .result .contents h3 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .result .contents h1 {
+    font-size: 50px;
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .result .contents h1 li {
+    font-size: 25px;
+  }
+  .result .contents .bottom {
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+  .alert {
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .home {
+    padding: 0px 30px;
+  }
+  .home .next {
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+  }
+  .home .intro {
+    margin-top: 20px;
+  }
+  .home .intro h1 {
+    font-size: 26px;
+  }
+  .home .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    padding: 30px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .select .label {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .home .select .categories {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home .select .categories button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .home .select input {
+    padding: 10px 15px;
+    min-width: 70%;
+    font-size: 16px;
+  }
+  .home .endContainer {
+    margin: 0px;
+  }
+  .home .endContainer .end {
+    font-size: 18px;
+    margin: 0px;
+  }
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+  .reminder {
+    height: 100vh;
+    padding: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .reminder h1 {
+    font-size: 20px;
+    padding: 0px;
+    text-align: left;
+  }
+  .reminder p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 20px 0px;
+    text-align: left;
+  }
+  .reminder button {
+    margin-top: 0px;
+  }
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+  .quiz {
+    padding: 50px 0px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .quiz .timer {
+    background: #3d3f4e;
+    color: #2bc98c;
+    padding: 8px 20px;
+    left: 20px;
+    -webkit-transform: none;
+            transform: none;
+    top: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+  .quiz .finish {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    bottom: 50px;
+  }
+  .quiz .carousel-status {
+    font-size: 14px !important;
+    top: 0;
+    margin-right: 20px;
+    position: absolute;
+  }
+  .quiz .container {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quiz .container .question h5 {
+    font-size: 18px;
+  }
+  .quiz .container .question .options {
+    width: 100%;
+  }
+  .quiz .container .question .options .list {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .quiz .container .question .options .list span {
+    float: left;
+    margin-right: 10px;
+  }
+  .quiz .container .question .options .list p {
+    float: left;
+    text-align: left;
+  }
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+  .result {
+    height: 100vh;
+  }
+  .result .contents {
+    height: 100vh;
+    margin-top: 0px;
+    border-radius: 0px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 100px;
+  }
+  .result .contents h3 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .result .contents h1 {
+    font-size: 50px;
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .result .contents h1 li {
+    font-size: 25px;
+  }
+  .result .contents .bottom {
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*
+  =================================
+  =========Homepage Styles=========
+  =================================
+  */
+  .alert {
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .home .next {
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+  }
+  .home .intro {
+    margin-top: 20px;
+  }
+  .home .intro h1 {
+    font-size: 26px;
+  }
+  .home .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    padding: 30px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .select .label {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .home .select .categories {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home .select .categories button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .home .select input {
+    padding: 10px 15px;
+    min-width: 100%;
+    font-size: 16px;
+  }
+  .home .endContainer {
+    margin: 0px;
+  }
+  .home .endContainer .end {
+    font-size: 18px;
+    margin: 0px;
+  }
+  /*
+  =================================
+  =========Reminder Page Styles=========
+  =================================
+  */
+  .reminder {
+    height: 100vh;
+    padding: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .reminder h1 {
+    font-size: 20px;
+    padding: 0px;
+    text-align: left;
+  }
+  .reminder p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 20px 0px;
+    text-align: left;
+  }
+  .reminder button {
+    margin-top: 0px;
+  }
+  /*
+  =================================
+  =========Quiz Page Styles=========
+  =================================
+  */
+  .quiz {
+    padding: 50px 0px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .quiz .timer {
+    background: #3d3f4e;
+    color: #2bc98c;
+    padding: 8px 20px;
+    left: 20px;
+    -webkit-transform: none;
+            transform: none;
+    top: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+  .quiz .finish {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    bottom: 20px;
+  }
+  .quiz .carousel-status {
+    font-size: 14px !important;
+    top: 0;
+    margin-right: 20px;
+    position: absolute;
+  }
+  .quiz .container {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quiz .container .question h5 {
+    font-size: 18px;
+  }
+  .quiz .container .question .options {
+    width: 100%;
+  }
+  .quiz .container .question .options .list {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .quiz .container .question .options .list span {
+    float: left;
+    margin-right: 10px;
+  }
+  .quiz .container .question .options .list p {
+    float: left;
+    text-align: left;
+  }
+  /*
+  =================================
+  =========Result Page Styles=========
+  =================================
+  */
+  .result {
+    height: 100vh;
+  }
+  .result .contents {
+    height: 100vh;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 0px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .result .contents h3 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .result .contents h1 {
+    font-size: 50px;
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .result .contents h1 li {
+    font-size: 25px;
+  }
+  .result .contents .bottom {
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=globals.css.map */
