@@ -846,7 +846,8 @@ h6{
       padding: 10px 30px;
       font-size: 16px;
       border-radius: 50px;
-      bottom: 50px;
+      position: relative;
+      width: max-content;
     }
 
     .carousel-status{
@@ -860,8 +861,8 @@ h6{
 
       width: 100%;
       float: left;
-      padding: 20px;
-      height: 100vh;
+      padding: 50px 20px;
+      height: max-content;
       display: flex;
       align-items: center;
 
@@ -1077,49 +1078,60 @@ h6{
   */
 
   .quiz{
-    padding: 20px 0px;
+    padding: 0px;
     margin: 0px;
-    height: max-content;
+    height: max-content !important;
+    display: block;
+    position: relative;
 
     .timer{
       background: $primaryColor;
       color: $secondaryColor;
       padding: 8px 20px;
-      left: 20px;
-      transform: none;
-      top: 20px;
       font-size: 14px;
       border-radius: 50px;
+      margin: 0px;
+      float: left;
+      z-index: 999;
     }
 
     .finish{
       padding: 10px 30px;
       font-size: 16px;
       border-radius: 50px;
-      position: relative;
+      position: relative !important;
       width: max-content;
       margin: 0px;
       float: left;
+      z-index: 999;
+      margin-top: 10px;
     }
 
     .carousel-status{
       font-size: 14px !important;
-      top: 0;
+      margin-top: 23px;
       margin-right: 20px;
-      position: absolute;
+      position: relative;
     }
 
     .container{
 
       width: 100%;
       float: left;
-      padding: 20px;
-      margin: 50px 0px;
-      height: 100vh;
+      padding: 100px 20px;
+      padding-bottom: 0px;
+      margin: 0px;
+      height: max-content;
       display: flex;
       align-items: center;
+      position: relative;
 
       .question{
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        display: block;
+        float: left;
         
         h5{
           font-size: 18px;
