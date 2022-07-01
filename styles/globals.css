@@ -988,7 +988,7 @@ h6 {
   */
   .alert {
     padding: 8px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
   }
   .home {
@@ -1002,7 +1002,7 @@ h6 {
   .home .next {
     right: 20px;
     top: 20px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .home .intro {
     margin: 0px;
@@ -1064,19 +1064,21 @@ h6 {
   =================================
   */
   .reminder {
-    height: 100vh;
-    padding: 20px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 50px 20px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
   }
   .reminder h1 {
-    font-size: 20px;
+    font-size: 24px;
     padding: 0px;
     text-align: left;
   }
   .reminder p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0px;
     margin: 20px 0px;
     text-align: left;
@@ -1108,18 +1110,29 @@ h6 {
     float: left;
     z-index: 999;
   }
-  .quiz .finish {
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 50px;
-    position: relative !important;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin: 0px;
+  .quiz .endTest {
     float: left;
-    z-index: 999;
-    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
+  .quiz .endTest .finish {
+    padding: 8px 30px;
+    font-size: 18px;
+    float: left;
+    margin-top: unset;
+    position: unset;
+    bottom: unset;
+    left: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .quiz .carousel-status {
     font-size: 14px !important;
@@ -1133,16 +1146,12 @@ h6 {
     padding: 100px 20px;
     padding-bottom: 0px;
     margin: 0px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
+    height: unset;
+    display: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    position: unset;
   }
   .quiz .container .question {
     padding: 0px;

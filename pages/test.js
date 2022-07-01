@@ -46,9 +46,11 @@ const Test = () => {
 
             </Carousel>
 
-            <button className='finish' onClick={(e) => {handleNext(e)}}>
-                End Test
-            </button>
+            <div className="endTest">
+                <button className='finish' onClick={(e) => {handleNext(e)}}>
+                    End Test
+                </button>
+            </div>
 
         </div>
     </>
