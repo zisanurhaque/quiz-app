@@ -14,7 +14,10 @@ const Result = () => {
         if(state.name === "" || state.topic === ""){
           Router.push("/")
         }
-        if(state.score < 5){
+        if(state.score < 4){
+            setGreet("You'r Failed'")
+        }
+        else if(state.score < 5){
             setGreet("You Have To Improve")
         }else if(state.score < 7){
             setGreet("Nice Try")

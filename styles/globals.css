@@ -8,8 +8,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Jost", sans-serif;
-  color: #3d3f4e;
+  color: rgb(61, 63, 78);
   font-size: 20px;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
 }
 
 a {
@@ -47,12 +51,10 @@ h6 {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /*
@@ -64,18 +66,12 @@ h6 {
   float: left;
   width: 100%;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #3d3f4e;
+  justify-content: center;
+  align-items: center;
+  background: rgb(61, 63, 78);
   font-size: 16px;
-  color: #2bc98c;
+  color: rgb(43, 201, 140);
   position: absolute;
   top: 0;
   left: 0;
@@ -86,22 +82,12 @@ h6 {
   float: left;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 .home .next {
   position: absolute;
   right: 100px;
@@ -111,107 +97,77 @@ h6 {
   background: none;
   cursor: pointer;
   border: none;
-  color: #3d3f4e;
+  color: rgb(61, 63, 78);
   border-radius: 3px;
   float: left;
 }
-
 .home .next:hover {
-  color: #2bc98c;
+  color: rgb(43, 201, 140);
 }
-
 .home .intro {
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .home .intro h1 span {
-  color: #2bc98c;
+  color: rgb(43, 201, 140);
 }
-
 .home .select {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 50px 0px;
-  width: 40%;
+  width: 550px;
 }
-
 .home .select .label {
   float: left;
   font-size: 16px;
   margin-bottom: 15px;
   color: grey;
 }
-
 .home .select .categories {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .home .select .categories button {
   padding: 8px 20px;
   font-size: 18px;
   font-family: "Jost", sans-serif;
-  background: #3d3f4e;
+  background: rgb(61, 63, 78);
   cursor: pointer;
   border: none;
   color: white;
   border-radius: 3px;
   float: left;
 }
-
 .home .select .categories button:hover {
-  background: #2bc98c;
-  color: #3d3f4e;
+  background: rgb(43, 201, 140);
+  color: white;
 }
-
 .home .select .categories button.active {
-  background: #2bc98c;
-  color: #3d3f4e;
+  background: rgb(43, 201, 140);
+  color: white;
 }
-
 .home .select input {
   float: left;
   padding: 10px 20px;
   min-width: 300px;
   border-radius: 3px;
-  border: 1px solid #3d3f4e;
+  border: 1px solid rgb(61, 63, 78);
   outline: none;
   font-size: 18px;
   font-family: "Jost", sans-serif;
-  color: #3d3f4e;
+  color: rgb(61, 63, 78);
   margin-bottom: 25px;
 }
-
 .home .endContainer .end {
-  color: #3d3f4e;
+  color: rgb(61, 63, 78);
   font-size: 28px;
   margin-top: 20px;
 }
-
 .home .endContainer .end span {
-  color: #2bc98c;
+  color: rgb(43, 201, 140);
 }
 
 /*
@@ -223,45 +179,32 @@ h6 {
   float: left;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 100px;
   text-align: center;
 }
-
 .reminder h1 {
   padding: 0px;
   margin: 0px;
 }
-
 .reminder h1 span {
-  color: #2bc98c;
+  color: rgb(43, 201, 140);
 }
-
 .reminder p {
   padding: 20px;
   float: left;
 }
-
 .reminder button {
   padding: 8px 30px;
   font-size: 18px;
   font-family: "Jost", sans-serif;
-  background: #2bc98c;
+  background: rgb(43, 201, 140);
   cursor: pointer;
   border: none;
-  color: #3d3f4e;
+  color: white;
   border-radius: 3px;
   float: left;
   margin-top: 15px;
@@ -276,23 +219,15 @@ h6 {
   float: left;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 0px 100px;
   position: relative;
   padding-top: 20px;
 }
-
 .quiz .timer {
-  background: #3d3f4e;
+  background: rgb(61, 63, 78);
   color: white;
   padding: 8px 30px;
   float: left;
@@ -301,37 +236,32 @@ h6 {
   width: max-content;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40px;
 }
-
 .quiz .finish {
   padding: 8px 30px;
   font-size: 18px;
   font-family: "Jost", sans-serif;
-  background: #2bc98c;
+  background: rgb(43, 201, 140);
   cursor: pointer;
   border: none;
-  color: #3d3f4e;
+  color: white;
   border-radius: 3px;
   float: left;
   margin-top: 15px;
   position: absolute;
   bottom: 100px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .quiz .carousel-status {
   font-size: 18px !important;
-  color: #3d3f4e !important;
+  color: rgb(61, 63, 78) !important;
   text-shadow: none !important;
 }
-
 .quiz .control-arrow {
-  background: #c7c7c7 !important;
+  background: rgb(199, 199, 199) !important;
   height: -webkit-max-content !important;
   height: -moz-max-content !important;
   height: max-content !important;
@@ -339,48 +269,32 @@ h6 {
   border-radius: 50px !important;
   height: 40px !important;
   width: 40px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .quiz .container {
   width: 100%;
   float: left;
   padding: 80px 100px;
 }
-
 .quiz .container .question {
   float: left;
   width: 100%;
 }
-
 .quiz .container .question h5 {
   float: left;
   width: 100%;
   text-align: left;
 }
-
 .quiz .container .question .options {
   float: left;
   padding: 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
-
 .quiz .container .question .options .list {
   width: 49%;
   height: -webkit-max-content;
@@ -388,39 +302,32 @@ h6 {
   height: max-content;
   list-style-type: none;
   float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 10px 0px;
   padding: 10px 25px;
   font-size: 18px;
-  -webkit-box-shadow: 0px 0px 4px 0px #c9c9c9;
-          box-shadow: 0px 0px 4px 0px #c9c9c9;
+  box-shadow: 0px 0px 4px 0px rgb(201, 201, 201);
   border: 1px solid white;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
 }
-
 .quiz .container .question .options .list span {
   float: left;
   margin-right: 20px;
 }
-
 .quiz .container .question .options .list p {
   float: left;
   text-align: left;
 }
-
 .quiz .container .question .options .list:hover {
-  border: 1px solid #3d3f4e;
+  border: 1px solid rgb(61, 63, 78);
 }
-
 .quiz .container .question .options .checked {
-  border: 1px solid #3d3f4e;
+  background: rgb(43, 201, 140);
+  color: white;
+  border: 1px solid rgb(43, 201, 140) !important;
 }
 
 /*
@@ -432,31 +339,23 @@ h6 {
   float: left;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #3d3f4e;
+  justify-content: center;
+  align-items: center;
+  background: rgb(61, 63, 78);
 }
-
 .result .contents {
   z-index: 1;
-  color: #f1b74b;
+  color: rgb(241, 183, 75);
   margin-top: 5px;
   text-align: center;
-  font-family: 'Beau Rivage', cursive;
-  background: #3d3f4e;
+  font-family: "Beau Rivage", cursive;
+  background: rgb(61, 63, 78);
   padding: 50px 100px;
   border-radius: 20px;
-  border: 5px solid #f1b74b;
+  border: 5px solid rgb(241, 183, 75);
   width: 50vw;
 }
-
 .result .contents h3 {
   font-size: 38px;
   font-family: none;
@@ -465,9 +364,8 @@ h6 {
   margin: 0px;
   margin-bottom: 0px;
   width: 100%;
-  color: #cecece;
+  color: rgb(206, 206, 206);
 }
-
 .result .contents h1 {
   font-size: 80px;
   float: left;
@@ -475,70 +373,51 @@ h6 {
   padding: 0px;
   margin: 0px;
 }
-
 .result .contents h1 li {
   font-size: 30px;
   list-style-type: none;
 }
-
 .result .contents .bottom {
   float: left;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 50px;
 }
-
 .result .contents .bottom .signature {
   float: left;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
 .result .contents .bottom .signature p {
   float: left;
   width: 100%;
-  color: #cecece;
+  color: rgb(206, 206, 206);
   font-family: none;
   position: relative;
   padding: 5px;
   font-size: 16px;
 }
-
 .result .contents .bottom .signature p::after {
   position: absolute;
   content: "";
   height: 1px;
-  background: #cecece;
+  background: rgb(206, 206, 206);
   width: 90%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 0;
 }
-
 .result .contents .bottom .signature span {
   float: left;
   width: 100%;
   font-size: 14px;
   padding: 5px;
 }
-
 .result .contents .bottom .signature .sig {
   font-size: 22px;
   padding: 0px;
@@ -571,18 +450,12 @@ h6 {
     font-size: 32px;
   }
   .home .select {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0px;
     width: 100%;
     padding: 50px 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .home .select .label {
     font-size: 16px;
@@ -590,11 +463,8 @@ h6 {
     color: grey;
   }
   .home .select .categories {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .home .select .categories button {
     padding: 10px 20px;
@@ -623,9 +493,7 @@ h6 {
   .reminder {
     height: 100vh;
     padding: 50px 100px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
   }
   .reminder h1 {
     font-size: 32px;
@@ -653,12 +521,11 @@ h6 {
     height: max-content;
   }
   .quiz .timer {
-    background: #3d3f4e;
-    color: #2bc98c;
+    background: rgb(61, 63, 78);
+    color: rgb(43, 201, 140);
     padding: 10px 25px;
     left: 65px;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     top: 30px;
     font-size: 16px;
     border-radius: 50px;
@@ -681,12 +548,8 @@ h6 {
     float: left;
     padding: 20px 50px;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .quiz .container .question h5 {
     font-size: 22px;
@@ -722,16 +585,9 @@ h6 {
     margin-top: 0px;
     border-radius: 0px;
     width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 0px 180px;
   }
   .result .contents h3 {
@@ -750,17 +606,12 @@ h6 {
   .result .contents .bottom {
     float: left;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 0px;
     margin: 0px;
   }
 }
-
 @media screen and (max-width: 800px) {
   /*
   =================================
@@ -787,29 +638,20 @@ h6 {
     font-size: 26px;
   }
   .home .select {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0px;
     width: 100%;
     padding: 30px 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .home .select .label {
     font-size: 14px;
     margin-bottom: 15px;
   }
   .home .select .categories {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .home .select .categories button {
     padding: 8px 15px;
@@ -838,9 +680,7 @@ h6 {
   .reminder {
     height: 100vh;
     padding: 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
   }
   .reminder h1 {
     font-size: 20px;
@@ -868,12 +708,11 @@ h6 {
     height: max-content;
   }
   .quiz .timer {
-    background: #3d3f4e;
-    color: #2bc98c;
+    background: rgb(61, 63, 78);
+    color: rgb(43, 201, 140);
     padding: 8px 20px;
     left: 20px;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     top: 20px;
     font-size: 14px;
     border-radius: 50px;
@@ -900,12 +739,8 @@ h6 {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .quiz .container .question h5 {
     font-size: 18px;
@@ -941,16 +776,9 @@ h6 {
     margin-top: 0px;
     border-radius: 0px;
     width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 0px 100px;
   }
   .result .contents h3 {
@@ -969,17 +797,12 @@ h6 {
   .result .contents .bottom {
     float: left;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 0px;
     margin: 0px;
   }
 }
-
 @media screen and (max-width: 480px) {
   /*
   =================================
@@ -1013,29 +836,20 @@ h6 {
     width: 100%;
   }
   .home .select {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0px;
     width: 100%;
     padding: 30px 0px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .home .select .label {
     font-size: 14px;
     margin-bottom: 15px;
   }
   .home .select .categories {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .home .select .categories button {
     padding: 8px 15px;
@@ -1043,7 +857,7 @@ h6 {
     border-radius: 2px;
     margin-right: 5px;
     margin-bottom: 5px;
-    width: 100%;
+    width: 48%;
   }
   .home .select input {
     padding: 10px 15px;
@@ -1068,9 +882,7 @@ h6 {
     height: -moz-max-content;
     height: max-content;
     padding: 50px 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
   }
   .reminder h1 {
     font-size: 24px;
@@ -1101,8 +913,8 @@ h6 {
     position: relative;
   }
   .quiz .timer {
-    background: #3d3f4e;
-    color: #2bc98c;
+    background: rgb(61, 63, 78);
+    color: rgb(43, 201, 140);
     padding: 8px 20px;
     font-size: 14px;
     border-radius: 50px;
@@ -1115,12 +927,8 @@ h6 {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-bottom: 50px;
   }
   .quiz .endTest .finish {
@@ -1131,8 +939,7 @@ h6 {
     position: unset;
     bottom: unset;
     left: none;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
   .quiz .carousel-status {
     font-size: 14px !important;
@@ -1148,9 +955,7 @@ h6 {
     margin: 0px;
     height: unset;
     display: unset;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
+    align-items: unset;
     position: unset;
   }
   .quiz .container .question {
@@ -1195,16 +1000,9 @@ h6 {
     padding: 20px;
     border-radius: 0px;
     width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .result .contents h3 {
     font-size: 20px;
@@ -1222,12 +1020,7 @@ h6 {
   .result .contents .bottom {
     float: left;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
-}
-/*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=globals.css.map */
