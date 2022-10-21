@@ -8,5 +8,5 @@
 </ul>
 
 <h3>
-  <a href="https://zisansquiz.netlify.app/">Watch Live</a>
+  <a href="https://zisansquiz.netlify.app/">Live Preview</a>
 </h3>

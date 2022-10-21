@@ -914,7 +914,7 @@ h6 {
   }
   .quiz .timer {
     background: rgb(61, 63, 78);
-    color: rgb(43, 201, 140);
+    color: white;
     padding: 8px 20px;
     font-size: 14px;
     border-radius: 50px;
